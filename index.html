@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <title>Viva l'Italia</title>
+</head>
+
+<body>
+    <header>
+        <table class="fej">
+            <tr>
+                <td class="zold"><img src="roma.jpg" class="kep" alt="Colosseum"></td>
+                <td class="feher">
+                    <h1>OLASZORSZÁG</h1>
+                </td>
+                <td class="piros"><img src="pisa.jpg" class="kep" alt="Pisai ferdetorony"></td>
+            </tr>
+        </table>
+    </header>
+    <div class="udvozles">
+        <h1 class="valtozo"></h1>
+        <p>Üdvözlünk az olasz kultúra, történelem és gasztronómia világában. Fedezd fel a rejtett kincseket és ismerd
+            meg az itáliai élet varázsát!</p>
+    </div>
+    <article class="kontener">
+        <div class="tori">
+            <h1 class="cimek">TÖRTÉNELEM</h1>
+            <p>
+                Fedezd fel Olaszország történelmét az ókori Rómától a reneszánszig. Megismerheted az ország kulturális
+                örökségét és világhírű építészeti csodáit. Egy izgalmas időutazás vár rád, amely évszázadokon átívelő
+                történeteket tár fel.
+            </p>
+            <p id="tovabb1">
+                <a href="tortenelem.html">Bővebben...</a>
+            </p>
+        </div>
+        <div class="gasztro">
+            <h1 class="cimek">GASZTRONÓMIA</h1>
+            <p>
+                Merülj el az olasz konyha csodáiban, és ismerd meg a pizza, a pasta és más ínyencségek titkait. Fedezd
+                fel a régiók különleges fogásait és a mediterrán étrend népszerűségét. Az olasz ízek garantáltan
+                magukkal ragadnak!
+            </p>
+            <p id="tovabb2">
+                <a href="gasztronomia.html">Bővebben...</a>
+            </p>
+        </div>
+        <div class="sport">
+            <h1 class="cimek">SPORT</h1>
+            <p>
+                Tudd meg, miért olyan kiemelkedő az olasz foci, és fedezd fel a motorsportok izgalmas világát. A Serie A
+                és a világbajnoki sikerek mellett a Ferrari is különleges figyelmet kap. Az olasz sportvilág sikerei
+                mindenkit inspirálnak.
+            </p>
+            <p id="tovabb3">
+                <a href="sport.html">Bővebben...</a>
+            </p>
+        </div>
+        <div class="kepek">
+            <h1 class="cimek">KÉPGALÉRIA</h1>
+            <p>
+                Gyönyörködj Olaszország gyönyörű tájaiban és ikonikus helyszíneiben. A képek elhozzák a Colosseum, a
+                velencei csatornák és a toszkán dombok varázsát. Merülj el a galériában, és hagyd, hogy magával ragadjon
+                a látvány.
+            </p>
+            <p id="tovabb4">
+                <a href="galeria.html">Bővebben...</a>
+            </p>
+        </div>
+        <div class="quiz">
+            <h1 class="cimek">TUDÁSPRÓBA</h1>
+            <p>
+                Tedd próbára tudásodat Olaszországról egy szórakoztató kvízben! Ismerd meg jobban az ország történelmét,
+                kultúráját és sporteredményeit. Szerezd meg a legmagasabb pontszámot, és légy a kvíz bajnoka!
+            </p>
+            <p id="tovabb5">
+                <a href="quiz.html">Bővebben...</a>
+            </p>
+        </div>
+        <div class="nyelv">
+            <h1 class="cimek">NYELV</h1>
+            <p>
+                Tanuld meg az olasz nyelv alapjait, hogy még közelebb kerülhess az ország kultúrájához! Egyszerű
+                kifejezések, amelyekkel elboldogulsz az utazásaid során, és betekintés az olasz nyelv világába.
+                Parliamo Italiano? Iniziamo!
+            </p>
+            <p id="tovabb6">
+                <a href="nyelv.html">Bővebben...</a>
+            </p>
+        </div>
+    </article>
+    <article class="tartalom">
+        <form method="post" action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" name="myform" novalidate>
+            <div>1. Jártál már Olaszországban?<br>
+            <input name="voltamolaszban" type="radio" id="igen1" value="igen"><label for="igen1">Igen</label>
+            <input name="voltamolaszban" type="radio" id="nem1" value="nem"><label for="nem1">Nem</label>
+            </div><div></div>
+            <hr>
+            <div><label for="varosok">2. Melyik a kedvenc olasz városod?</label><br>
+            <select name="varosok" id="varosok" size="1">
+                <option>Róma</option>
+                <option>Assisi</option>
+                <option>Milánó</option>
+                <option>Nápoly</option>
+                <option>Torinó</option>
+                <option>Palermó</option>
+                <option>Bologna</option>
+                <option>Verona</option>
+                <option>Firenze</option>
+                <option>Velence</option>
+            </select></div>
+            <div>
+            <hr> 3. Az alábbiak közül mely olasz tésztákat kóstoltad már?<br>
+            <input type="checkbox" name="arrabbiata" id="arrabbiata">
+            <label for="arrabbiata">Penne arrabbiata</label><br>
+            <input type="checkbox" name="lasagne" id="lasagne">
+            <label for="lasagne">Lasagne</label><br>
+            <input type="checkbox" name="bolognai" id="bolognai" checked>
+            <label for="bolognai">Spaghetti alla bolognese</label><br>
+            <input type="checkbox" name="carbonara" id="carbonara">
+            <label for="carbonara">Carbonara</label><br>
+            <input type="checkbox" name="gnocchi" id="gnocchi">
+            <label for="gnocchi">Gnocchi</label><br>
+            <input type="checkbox" name="arancini" id="arancini">
+            <label for="arancini">Arancini</label><br>
+            <input type="checkbox" name="risotto" id="risotto">
+            <label for="risotto">Risotto alla milanese</label><br>
+            <input type="checkbox" name="borsos" id="borsos">
+            <label for="borsos">Cacio e pepe</label><br>
+            <input type="checkbox" name="aglione" id="aglione">
+            <label for="aglione">Pici all’Aglione</label><br>
+            <input type="checkbox" name="tagliatelle" id="tagliatelle">
+            <label for="tagliatelle">Tagliatelle alla bolognese</label></div>
+            <hr>    
+            <div>
+            <label for="csuszka">4. Mennyire szereted Olaszországot egy 10-es skálán?</label><br>
+            <input type="range" max="10" min="1" step="1" value="5" name="csuszka" id="csuszka"></div>
+            <hr>
+            <div>
+            <label for="velemeny">5. Fejtsd ki a véleményedet bővebben!</label> <br>
+            <textarea placeholder="Az a véleményem, hogy..." id="velemeny" name="velemeny" cols="30"></textarea>
+            </div><div></div>
+            <hr>
+            <div>6. Szeretnél értesülni az olasz újdonságokról?<br>
+            <input name="ertesites" type="radio" id="igen2" value="igen" checked>
+            <label for="igen2">Igen</label>
+            <input name="ertesites" type="radio" id="nem2" value="nem">
+            <label for="nem2">Nem</label></div>
+            <div id="plusz1" class="rejtett"><hr><label for="veznev">7. Vezetéknév:</label> <br>
+                <input placeholder="Kovács" name="vnev" type="text" id="veznev">
+                <br>
+            </div>
+            <div></div>
+            <div id="plusz2" class="rejtett"><hr><label for="keresztnev">8. Keresztnév: </label><br>
+                <input placeholder="Ádám" name="knev" type="text" id="keresztnev">
+                <br>
+            </div>
+            <div></div>
+            <div id="plusz3" class="rejtett"><hr><label for="teloszam">9. Telefonszám</label> (pl.:+36 20 413 4671): <br>
+                <input pattern="+36 [0-9]{2} [0-9]{3} [0-9]{4}" name="tszam" type="tel" id="teloszam">
+            </div>
+            <div></div>
+            <div id="plusz4" class="rejtett"><hr><label for="email">10. E-mail cím:</label><br>
+                <input placeholder="adam.kovacs3@stud.uni-corvinus.hu" name="email" type="email" size="30"
+                    id="email"><br>
+            </div>
+            <div></div>
+            <div id="plusz5" class="rejtett"><hr><label for="datum">11. Születési dátum</label><br>
+                <input name="datum" type="date" id="datum"><br>
+            </div>
+            <div></div>
+            <div><hr><input type="checkbox" id="elfogad" value="igen" name="elfogad"><label for="elfogad">Elfogadom a felhasználási feltételeket</label></div>
+            <div></div>
+            <br>
+            <input type="button" value="Kész" id="formos">
+            <input class="rejtett" type="submit" value="Elküldés" id="vegso">
+        </form>
+    </article>
+    <footer>
+        <h3>A weboldal kizárólag tanulmányi célokból készült el © Kovács Ádám</h3>
+    </footer>
+    <script src="urlap.js"></script>
+</body>
+
+</html>

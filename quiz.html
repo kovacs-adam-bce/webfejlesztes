@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <title>Viva l'Italia</title>
+</head>
+
+<body>
+    <header>
+        <table class="fej">
+            <tr>
+                <td class="zold"><img src="roma.jpg" class="kep" alt="Colosseum"></td>
+                <td class="feher">
+                    <h1>OLASZORSZÁG</h1>
+                </td>
+                <td class="piros"><img src="pisa.jpg" class="kep" alt="Pisai ferdetorony"></td>
+            </tr>
+        </table>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">FŐOLDAL</a></li>
+            <li><a href="tortenelem.html">TÖRTÉNELEM</a></li>
+            <li><a href="gasztronomia.html">GASZTRONÓMIA</a></li>
+            <li><a href="sport.html">SPORT</a></li>
+            <li><a href="nyelv.html">NYELV</a></li>
+            <li><a href="galeria.html">KÉPGALÉRIA</a></li>
+            <li id="current"><a href="quiz.html">TOTÓ</a></li>
+        </ul>
+    </nav>
+    <article class="tartalom">
+        <div id="kerdes1">
+            <h2>Mikor alapították a Római Birodalmat a hagyomány szerint?</h2>
+            <input name="radio1" type="radio" id="rossz1"> <label for="rossz1">Kr. e. 509</label><br>
+            <input name="radio1" type="radio" id="jo1"> <label id="jovalasz" for="jo1">Kr. e. 753</label><br>
+            <input name="radio1" type="radio" id="rossz2"> <label for="rossz2">Kr. e. 272</label><br>
+            <br><input type="button" value="Leadás" id="gomb1">
+        </div>
+
+        <div id="kerdes2" class="rejtett">
+            <h2>Mit fejlesztett ki Dante Alighieri, amely jelentősen hozzájárult az olasz kultúrához?</h2>
+            <input name="radio2" type="radio" id="jo2"> <label id="jovalasz1" for="jo2">A modern olasz
+                nyelvet</label><br>
+            <input name="radio2" type="radio" id="rossz3"> <label for="rossz3">A római jog rendszerezését</label><br>
+            <input name="radio2" type="radio" id="rossz4"> <label for="rossz4">A világhírű olasz gasztronómia
+                alapjait</label><br>
+            <br><input type="button" value="Leadás" id="gomb2">
+        </div>
+
+        <div id="kerdes3" class="rejtett">
+            <h2>Melyik három 'R' jellemzi legjobban Olaszország történelmét?</h2>
+            <input name="radio3" type="radio" id="rossz5"> <label for="rossz5">Risorgimento, Revolúció, Római
+                Köztársaság</label><br>
+            <input name="radio3" type="radio" id="rossz6"> <label for="rossz6">Reneszánsz, Reformáció,
+                Risorgimento</label><br>
+            <input name="radio3" type="radio" id="jo3"> <label id="jovalasz2" for="jo3">Római Birodalom, Reneszánsz,
+                Risorgimento</label><br>
+            <br><input type="button" value="Leadás" id="gomb3">
+        </div>
+
+        <div id="kerdes4" class="rejtett">
+            <h2>Melyik étel származik Nápolyból?</h2>
+            <input name="radio4" type="radio" id="rossz7"> <label for="rossz7">Pappardelle al ragù di
+                cinghiale</label><br>
+            <input name="radio4" type="radio" id="rossz8"> <label for="rossz8">Risotto alla Milanese</label><br>
+            <input name="radio4" type="radio" id="jo4"> <label id="jovalasz3" for="jo4">Pizza margherita</label><br>
+            <br><input type="button" value="Leadás" id="gomb4">
+        </div>
+
+        <div id="kerdes5" class="rejtett">
+            <h2>Mit jelent a 'DOP' jelölés az olasz gasztronómiában?</h2>
+            <input name="radio5" type="radio" id="rossz9"> <label for="rossz9">Helyi alapanyagok
+                felhasználását</label><br>
+            <input name="radio5" type="radio" id="jo5"> <label id="jovalasz4" for="jo5">Oltalom alatt álló
+                eredetmegjelölést</label><br>
+            <input name="radio5" type="radio" id="rossz10"> <label for="rossz10">A legjobb olasz borok
+                minősítését</label><br>
+            <br><input type="button" value="Leadás" id="gomb5">
+        </div>
+
+        <div id="kerdes6" class="rejtett">
+            <h2>Melyik régióban készítenek hagyományosan polentát?</h2>
+            <input name="radio6" type="radio" id="rossz11"> <label for="rossz11">Toszkána</label><br>
+            <input name="radio6" type="radio" id="rossz12"> <label for="rossz12">Szicília</label><br>
+            <input name="radio6" type="radio" id="jo6"> <label id="jovalasz5" for="jo6">Észak-Olaszország</label><br>
+            <br><input type="button" value="Leadás" id="gomb6">
+        </div>
+
+        <div id="kerdes7" class="rejtett">
+            <h2>Hány futball-világbajnokságot nyert Olaszország?</h2>
+            <input name="radio7" type="radio" id="rossz13"> <label for="rossz13">3</label><br>
+            <input name="radio7" type="radio" id="jo7"> <label id="jovalasz6" for="jo7">4</label><br>
+            <input name="radio7" type="radio" id="rossz14"> <label for="rossz14">5</label><br>
+            <br><input type="button" value="Leadás" id="gomb7">
+        </div>
+
+        <div id="kerdes8" class="rejtett">
+            <h2>Melyik híres kerékpárverseny kerül megrendezésre Olaszországban?</h2>
+            <input name="radio8" type="radio" id="rossz15"> <label for="rossz15">Tour de France</label><br>
+            <input name="radio8" type="radio" id="rossz16"> <label for="rossz16">Vuelta a España</label><br>
+            <input name="radio8" type="radio" id="jo8"> <label id="jovalasz7" for="jo8">Giro d’Italia</label><br>
+            <br><input type="button" value="Leadás" id="gomb8">
+        </div>
+
+        <div id="kerdes9" class="rejtett">
+            <h2>Ki az a híres olasz motorsport-pilóta, aki 9 MotoGP világbajnoki címet szerzett?</h2>
+            <input name="radio9" type="radio" id="rossz17"> <label for="rossz17">Marco Simoncelli</label><br>
+            <input name="radio9" type="radio" id="jo9"> <label id="jovalasz8" for="jo9">Valentino Rossi</label><br>
+            <input name="radio9" type="radio" id="rossz18"> <label for="rossz18">Giacomo Agostini</label><br>
+            <br><input type="button" value="Leadás" id="gomb9">
+        </div>
+
+        <div id="kerdes10" class="rejtett">
+            <h2>Melyik sportágban szerzett három olimpiai aranyérmet Alberto Tomba?</h2>
+            <input name="radio10" type="radio" id="jo10"> <label id="jovalasz9" for="jo10">Síelés</label><br>
+            <input name="radio10" type="radio" id="rossz19"> <label for="rossz19">Futás</label><br>
+            <input name="radio10" type="radio" id="rossz20"> <label for="rossz20">Tenisz</label><br>
+            <br><input type="button" value="Leadás" id="gomb10">
+        </div>
+
+        <div id="kerdes11" class="rejtett">
+            <h2>Melyik olasz stadionban játszik az Inter Milan és az AC Milan?</h2>
+            <input name="radio11" type="radio" id="rossz21"> <label for="rossz21">Allianz Stadium</label><br>
+            <input name="radio11" type="radio" id="jo11"> <label id="jovalasz10" for="jo11">San Siro</label><br>
+            <input name="radio11" type="radio" id="rossz22"> <label for="rossz22">Stadio Olimpico</label><br>
+            <br><input type="button" value="Leadás" id="gomb11">
+        </div>
+
+        <div id="kerdes12" class="rejtett">
+            <h2>Mit szimbolizál a rózsaszín trikó a Giro d’Italia versenyen?</h2>
+            <input name="radio12" type="radio" id="rossz23"> <label for="rossz23">A legjobb hegymászó</label><br>
+            <input name="radio12" type="radio" id="jo12"> <label id="jovalasz11" for="jo12">Az összetett verseny
+                vezetője</label><br>
+            <input name="radio12" type="radio" id="rossz24"> <label for="rossz24">A leggyorsabb sprinter</label><br>
+            <br><input type="button" value="Leadás" id="gomb12">
+        </div>
+
+        <div id="kerdes13" class="rejtett">
+            <h2>Melyik híres teniszverseny kerül megrendezésre Rómában?</h2>
+            <input name="radio13" type="radio" id="rossz25"> <label for="rossz25">Roland Garros</label><br>
+            <input name="radio13" type="radio" id="rossz26"> <label for="rossz26">Wimbledon</label><br>
+            <input name="radio13" type="radio" id="jo13"> <label id="jovalasz12" for="jo13">Italian Open</label><br>
+            <br><input type="button" value="Leadás" id="gomb13">
+        </div>
+
+        <div id="kerdes14" class="rejtett">
+            <h2>Melyik az olasz nyelv leghosszabb szava, amely 30 betűből áll?</h2>
+            <input name="radio14" type="radio" id="jo14"> <label id="jovalasz13"
+                for="jo14">Psiconeuroendocrinoimmunologia</label><br>
+            <input name="radio14" type="radio" id="rossz27"> <label
+                for="rossz27">Supercalifragilistichespirali</label><br>
+            <input name="radio14" type="radio" id="rossz28"> <label for="rossz28">Voltaic-elektroenergia</label><br>
+            <br><input type="button" value="Leadás" id="gomb14">
+        </div>
+    </article>
+    <footer>
+        <h3>A weboldal kizárólag tanulmányi célokból készült el © Kovács Ádám</h3>
+    </footer>
+    <script src="quiz.js"></script>
+</body>
+
+</html>

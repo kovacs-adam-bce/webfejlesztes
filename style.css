@@ -1,0 +1,372 @@
+/*Telefonos nézet*/
+* {
+    box-sizing: border-box;
+}
+
+.error{
+    color: #FB3A3A;
+}
+
+header {
+    display: flex;
+}
+
+.fej {
+    justify-content: center;
+    width: 95%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.kep {
+    flex-basis: auto;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px black;
+}
+
+.zold {
+    background-color: #008C45;
+    padding: 20px;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    width: 33.33%;
+}
+
+.feher {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+    background-color: #F4F9FF;
+    padding: 10px;
+    width: 33.34%;
+}
+
+.piros {
+    background-color: #CD212A;
+    text-align: center;
+    padding: 20px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 33.33%;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+article ul {
+    background-color: #FBE9E7;
+}
+
+article{
+    margin-bottom: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    background-color: rgb(199, 180, 128);
+    flex-basis: 95%;
+    border-radius: 20px;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+}
+
+nav a:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+li#current a {
+    font-size: 1.2em;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+p#tovabb1 a,
+p#tovabb2 a,
+p#tovabb3 a,
+p#tovabb4 a,
+p#tovabb5 a,
+p#tovabb6 a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+p#tovabb1 a {
+    background-color: #1976D2;
+}
+
+p#tovabb2 a {
+    background-color: #388E3C;
+}
+
+p#tovabb3 a {
+    background-color: #FFB74D;
+}
+
+p#tovabb4 a {
+    background-color: #FBC02D;
+}
+
+p#tovabb5 a {
+    background-color: #E57373;
+}
+
+p#tovabb6 a {
+    background-color: #FF7043;
+}
+
+p#tovabb1 a:hover,
+p#tovabb2 a:hover,
+p#tovabb3 a:hover,
+p#tovabb4 a:hover,
+p#tovabb5 a:hover,
+p#tovabb6 a:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.tartalom {
+    display: flex;
+    padding: 20px;
+    color: #4E342E;
+    background-color: #FFF8E1;
+    border-radius: 30px;
+    border: 1px solid rgb(199, 180, 128);
+    flex-direction: column;
+    margin: 10px 20px;
+    text-align: justify;
+}
+
+.tartalom p {
+    display: flex;
+}
+
+.kontener {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.udvozles {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF3E0;
+    color: #4E342E;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+    border: 1px solid lightsalmon;
+}
+
+.sport,
+.quiz,
+.gasztro,
+.kepek,
+.tori,
+.nyelv {
+    margin: 5px;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.tori {
+    background-color: #E3F2FD;
+}
+
+.gasztro {
+    background-color: #DFFFD6;
+}
+
+.sport {
+    background-color: #FFF3E0;
+}
+
+.kepek {
+    background-color: #FFF9C4;
+}
+
+.quiz {
+    background-color: #FFDADA;
+}
+
+.nyelv {
+    background-color: #FFF9E6;
+}
+
+.cimek {
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #FBE9E7;
+    font-family: "Lora", sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+footer {
+    background-color: rgb(199, 180, 128);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 15px;
+    margin-top: auto;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #FFF8E1;
+}
+
+.alahuzott {
+    text-decoration: underline;
+}
+
+.timeline li {
+    color: #4E342E;
+    background-color: #ddbe56;
+    padding: 15px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 30px;
+    font-size: 1em;
+}
+
+.slider {
+    max-width: 90%;
+    height: auto;
+    min-width: 200px;
+    margin: 0 auto;
+}
+
+.valtozo:after{
+    content: "Benvenuto!";
+}
+
+.valtozo:hover:after{
+    content: "Isten hozott!";
+}
+
+.slick-slide {
+    margin: 0px 5px;
+    height: auto;
+}
+
+.slick-slide img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-slide {
+    transition: all ease-in-out .5s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.galeriacimek{
+    text-align: center;
+    font-style: italic;
+    color: #4E342E;
+}
+
+.rejtett{
+    display: none;
+}
+
+.nyelvcim{
+    text-align: center;
+    font-size: 2em;
+}
+/*Tablet nézet*/
+
+@media all and (min-width: 600px) {}
+
+/*Számítógépes nézet*/
+
+@media all and (min-width: 768px) {
+    ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .sport,
+    .quiz,
+    .gasztro,
+    .kepek,
+    .tori,
+    .nyelv {
+        flex-basis: 30%;
+    }
+
+    li {
+        font-size: 1.5vw;
+    }
+
+    .kontener {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cimek {
+        font-size: 1.9vw;
+    }
+}
